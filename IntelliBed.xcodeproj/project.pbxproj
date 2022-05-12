@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162100E92812239500A06A1D /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162100E82812239500A06A1D /* DemoBaseViewController.swift */; };
+		16B9918D282D52D400BC72E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16B9918C282D52D400BC72E3 /* GoogleService-Info.plist */; };
+		16B9918E282D52D400BC72E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16B9918C282D52D400BC72E3 /* GoogleService-Info.plist */; };
+		16B9918F282D52D400BC72E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16B9918C282D52D400BC72E3 /* GoogleService-Info.plist */; };
+		16B99191282D6DD600BC72E3 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B99190282D6DD600BC72E3 /* Window.swift */; };
+		16B99193282D6DFC00BC72E3 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B99192282D6DFC00BC72E3 /* DataPoint.swift */; };
+		16B99195282D761B00BC72E3 /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B99194282D761B00BC72E3 /* WindowViewController.swift */; };
 		16CAC74B27EA565E00250FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC74A27EA565E00250FE6 /* AppDelegate.swift */; };
 		16CAC74D27EA565E00250FE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC74C27EA565E00250FE6 /* SceneDelegate.swift */; };
-		16CAC74F27EA565E00250FE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC74E27EA565E00250FE6 /* ViewController.swift */; };
+		16CAC74F27EA565E00250FE6 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC74E27EA565E00250FE6 /* DataTableViewController.swift */; };
 		16CAC75227EA565E00250FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CAC75027EA565E00250FE6 /* Main.storyboard */; };
 		16CAC75427EA566400250FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CAC75327EA566400250FE6 /* Assets.xcassets */; };
 		16CAC75727EA566400250FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CAC75527EA566400250FE6 /* LaunchScreen.storyboard */; };
 		16CAC76227EA566400250FE6 /* IntelliBedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC76127EA566400250FE6 /* IntelliBedTests.swift */; };
 		16CAC76C27EA566400250FE6 /* IntelliBedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC76B27EA566400250FE6 /* IntelliBedUITests.swift */; };
 		16CAC76E27EA566400250FE6 /* IntelliBedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC76D27EA566400250FE6 /* IntelliBedUITestsLaunchTests.swift */; };
+		544FC5D46386F35860A5E070 /* Pods_IntelliBedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC9109501E45BA7EFDB8606 /* Pods_IntelliBedTests.framework */; };
+		CDBFBB0F232366382C09BC8C /* Pods_IntelliBed_IntelliBedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284619BA63309885B1E49A59 /* Pods_IntelliBed_IntelliBedUITests.framework */; };
+		FB5398EF87DDB4495E889B11 /* Pods_IntelliBed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6DFE9A4456C3E8988F59EE /* Pods_IntelliBed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		162100E82812239500A06A1D /* DemoBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
+		16B9918C282D52D400BC72E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16B99190282D6DD600BC72E3 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		16B99192282D6DFC00BC72E3 /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
+		16B99194282D761B00BC72E3 /* WindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowViewController.swift; sourceTree = "<group>"; };
 		16CAC74727EA565E00250FE6 /* IntelliBed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliBed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CAC74A27EA565E00250FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16CAC74C27EA565E00250FE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		16CAC74E27EA565E00250FE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16CAC74E27EA565E00250FE6 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		16CAC75127EA565E00250FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16CAC75327EA566400250FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16CAC75627EA566400250FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +64,15 @@
 		16CAC76727EA566400250FE6 /* IntelliBedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelliBedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CAC76B27EA566400250FE6 /* IntelliBedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliBedUITests.swift; sourceTree = "<group>"; };
 		16CAC76D27EA566400250FE6 /* IntelliBedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliBedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		234FC1431373EF54FCAC8D75 /* Pods-IntelliBed-IntelliBedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBed-IntelliBedUITests.release.xcconfig"; path = "Target Support Files/Pods-IntelliBed-IntelliBedUITests/Pods-IntelliBed-IntelliBedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		284619BA63309885B1E49A59 /* Pods_IntelliBed_IntelliBedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliBed_IntelliBedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5B8EEAFF8A2853E62D6FDE /* Pods-IntelliBed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBed.debug.xcconfig"; path = "Target Support Files/Pods-IntelliBed/Pods-IntelliBed.debug.xcconfig"; sourceTree = "<group>"; };
+		43B8EFE1D3596EA34089A19F /* Pods-IntelliBed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBed.release.xcconfig"; path = "Target Support Files/Pods-IntelliBed/Pods-IntelliBed.release.xcconfig"; sourceTree = "<group>"; };
+		47471D13DBC21AEB31310363 /* Pods-IntelliBed-IntelliBedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBed-IntelliBedUITests.debug.xcconfig"; path = "Target Support Files/Pods-IntelliBed-IntelliBedUITests/Pods-IntelliBed-IntelliBedUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9816CEB240B674CC7117888E /* Pods-IntelliBedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBedTests.release.xcconfig"; path = "Target Support Files/Pods-IntelliBedTests/Pods-IntelliBedTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB6DFE9A4456C3E8988F59EE /* Pods_IntelliBed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliBed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC9109501E45BA7EFDB8606 /* Pods_IntelliBedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliBedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEC78F95D4AC45A2A61DCF5 /* Pods-IntelliBedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBedTests.debug.xcconfig"; path = "Target Support Files/Pods-IntelliBedTests/Pods-IntelliBedTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5398EF87DDB4495E889B11 /* Pods_IntelliBed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544FC5D46386F35860A5E070 /* Pods_IntelliBedTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBFBB0F232366382C09BC8C /* Pods_IntelliBed_IntelliBedUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +110,8 @@
 				16CAC76027EA566400250FE6 /* IntelliBedTests */,
 				16CAC76A27EA566400250FE6 /* IntelliBedUITests */,
 				16CAC74827EA565E00250FE6 /* Products */,
+				4757EC398447DC55B2DFF948 /* Pods */,
+				EF960CF85A2DD19BCED46286 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +128,18 @@
 		16CAC74927EA565E00250FE6 /* IntelliBed */ = {
 			isa = PBXGroup;
 			children = (
+				16B9918C282D52D400BC72E3 /* GoogleService-Info.plist */,
 				16CAC74A27EA565E00250FE6 /* AppDelegate.swift */,
 				16CAC74C27EA565E00250FE6 /* SceneDelegate.swift */,
-				16CAC74E27EA565E00250FE6 /* ViewController.swift */,
+				16CAC74E27EA565E00250FE6 /* DataTableViewController.swift */,
 				16CAC75027EA565E00250FE6 /* Main.storyboard */,
 				16CAC75327EA566400250FE6 /* Assets.xcassets */,
 				16CAC75527EA566400250FE6 /* LaunchScreen.storyboard */,
 				16CAC75827EA566400250FE6 /* Info.plist */,
+				162100E82812239500A06A1D /* DemoBaseViewController.swift */,
+				16B99190282D6DD600BC72E3 /* Window.swift */,
+				16B99192282D6DFC00BC72E3 /* DataPoint.swift */,
+				16B99194282D761B00BC72E3 /* WindowViewController.swift */,
 			);
 			path = IntelliBed;
 			sourceTree = "<group>";
@@ -127,6 +161,29 @@
 			path = IntelliBedUITests;
 			sourceTree = "<group>";
 		};
+		4757EC398447DC55B2DFF948 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B5B8EEAFF8A2853E62D6FDE /* Pods-IntelliBed.debug.xcconfig */,
+				43B8EFE1D3596EA34089A19F /* Pods-IntelliBed.release.xcconfig */,
+				47471D13DBC21AEB31310363 /* Pods-IntelliBed-IntelliBedUITests.debug.xcconfig */,
+				234FC1431373EF54FCAC8D75 /* Pods-IntelliBed-IntelliBedUITests.release.xcconfig */,
+				FEEC78F95D4AC45A2A61DCF5 /* Pods-IntelliBedTests.debug.xcconfig */,
+				9816CEB240B674CC7117888E /* Pods-IntelliBedTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF960CF85A2DD19BCED46286 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DFE9A4456C3E8988F59EE /* Pods_IntelliBed.framework */,
+				284619BA63309885B1E49A59 /* Pods_IntelliBed_IntelliBedUITests.framework */,
+				EAC9109501E45BA7EFDB8606 /* Pods_IntelliBedTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16CAC77127EA566500250FE6 /* Build configuration list for PBXNativeTarget "IntelliBed" */;
 			buildPhases = (
+				3C1E07BDCEAADD3BA9142A42 /* [CP] Check Pods Manifest.lock */,
 				16CAC74327EA565E00250FE6 /* Sources */,
 				16CAC74427EA565E00250FE6 /* Frameworks */,
 				16CAC74527EA565E00250FE6 /* Resources */,
+				7E43F203916C1742DFFC85E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16CAC77427EA566500250FE6 /* Build configuration list for PBXNativeTarget "IntelliBedTests" */;
 			buildPhases = (
+				3C23E82104F85044EFB6C061 /* [CP] Check Pods Manifest.lock */,
 				16CAC75927EA566400250FE6 /* Sources */,
 				16CAC75A27EA566400250FE6 /* Frameworks */,
 				16CAC75B27EA566400250FE6 /* Resources */,
@@ -169,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16CAC77727EA566500250FE6 /* Build configuration list for PBXNativeTarget "IntelliBedUITests" */;
 			buildPhases = (
+				FEB727A26013256B683970C0 /* [CP] Check Pods Manifest.lock */,
 				16CAC76327EA566400250FE6 /* Sources */,
 				16CAC76427EA566400250FE6 /* Frameworks */,
 				16CAC76527EA566400250FE6 /* Resources */,
+				8B987A906454EE7655C7180D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16CAC75727EA566400250FE6 /* LaunchScreen.storyboard in Resources */,
+				16B9918D282D52D400BC72E3 /* GoogleService-Info.plist in Resources */,
 				16CAC75427EA566400250FE6 /* Assets.xcassets in Resources */,
 				16CAC75227EA565E00250FE6 /* Main.storyboard in Resources */,
 			);
@@ -241,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B9918E282D52D400BC72E3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,18 +312,126 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B9918F282D52D400BC72E3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C1E07BDCEAADD3BA9142A42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntelliBed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C23E82104F85044EFB6C061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntelliBedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E43F203916C1742DFFC85E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntelliBed/Pods-IntelliBed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntelliBed/Pods-IntelliBed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntelliBed/Pods-IntelliBed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B987A906454EE7655C7180D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntelliBed-IntelliBedUITests/Pods-IntelliBed-IntelliBedUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntelliBed-IntelliBedUITests/Pods-IntelliBed-IntelliBedUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntelliBed-IntelliBedUITests/Pods-IntelliBed-IntelliBedUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEB727A26013256B683970C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntelliBed-IntelliBedUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16CAC74327EA565E00250FE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16CAC74F27EA565E00250FE6 /* ViewController.swift in Sources */,
+				16B99195282D761B00BC72E3 /* WindowViewController.swift in Sources */,
+				16B99193282D6DFC00BC72E3 /* DataPoint.swift in Sources */,
+				16CAC74F27EA565E00250FE6 /* DataTableViewController.swift in Sources */,
+				16B99191282D6DD600BC72E3 /* Window.swift in Sources */,
 				16CAC74B27EA565E00250FE6 /* AppDelegate.swift in Sources */,
+				162100E92812239500A06A1D /* DemoBaseViewController.swift in Sources */,
 				16CAC74D27EA565E00250FE6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +606,7 @@
 		};
 		16CAC77227EA566500250FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5B8EEAFF8A2853E62D6FDE /* Pods-IntelliBed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,6 +620,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +636,7 @@
 		};
 		16CAC77327EA566500250FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B8EFE1D3596EA34089A19F /* Pods-IntelliBed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +650,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +666,7 @@
 		};
 		16CAC77527EA566500250FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEEC78F95D4AC45A2A61DCF5 /* Pods-IntelliBedTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +692,7 @@
 		};
 		16CAC77627EA566500250FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9816CEB240B674CC7117888E /* Pods-IntelliBedTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +718,7 @@
 		};
 		16CAC77827EA566500250FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47471D13DBC21AEB31310363 /* Pods-IntelliBed-IntelliBedUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +742,7 @@
 		};
 		16CAC77927EA566500250FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234FC1431373EF54FCAC8D75 /* Pods-IntelliBed-IntelliBedUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

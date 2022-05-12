@@ -1,0 +1,6 @@
+framework module Pods_IntelliBed_IntelliBedUITests {
+  umbrella header "Pods-IntelliBed-IntelliBedUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

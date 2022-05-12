@@ -1,0 +1,6 @@
+framework module Pods_IntelliBed {
+  umbrella header "Pods-IntelliBed-umbrella.h"
+
+  export *
+  module * { export * }
+}
