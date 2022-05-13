@@ -6,9 +6,10 @@ target 'IntelliBed' do
   use_frameworks!
 
   # Pods for IntelliBed
-	pod 'Charts'
 	pod 'Firebase'
 	pod 'Firebase/Database'
+ 	pod 'SwiftChart', '~> 1.0'
+
 
   target 'IntelliBedTests' do
     inherit! :search_paths

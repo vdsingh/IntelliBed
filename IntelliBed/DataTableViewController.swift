@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Charts
 import Firebase
 import FirebaseDatabase
 
@@ -27,9 +26,13 @@ class DataTableViewController: UITableViewController {
                 print(error!.localizedDescription)
                 return;
             }
-            guard let dictionary = snapshot.value as? [String: Any] else {return}
-            var window: Window = Window(dataPoints: [])
+            guard let dictionary = snapshot?.value as? [String: Any] else {return}
+//            var window: Window = Window(dataPoints: [])
+            var allDataPoints: [DataPoint] = []
+//            var counter = 0
+
             for timestamp in dictionary.keys{
+//                counter += 1
                 let usableDate = Date(timeIntervalSince1970: TimeInterval(timestamp.replacingOccurrences(of: "-", with: ".")) ?? 0)
                 
                 guard let windowData = dictionary[timestamp] as? [String: Any] else {
@@ -55,17 +58,31 @@ class DataTableViewController: UITableViewController {
                     sensorData[2],
                     sensorData[3],
                 ]
+                print("WINDOW 1 DATA X: \(windowData1["X"] as? Double ?? 0)")
                 let dataPoint: DataPoint = DataPoint(timestamp: usableDate, classLabel: windowData["class"] as? String ?? "", xValue: windowData1["X"] as? Double ?? 0, yValue: windowData1["Y"] as? Double ?? 0, sensorValues: sensorValues)
                 
-                window.addDataPoint(dataPoint: dataPoint)
-                if window.numDataPoints() >= 32 {
+//                window.addDataPoint(dataPoint: dataPoint)
+                allDataPoints.append(dataPoint)
+                
+            }
+            allDataPoints = allDataPoints.sorted(by: {$0.timestamp < $1.timestamp})
+            var dataPoints: [DataPoint] = []
+            for point in allDataPoints {
+                dataPoints.append(point)
+                if dataPoints.count >= 32 {
+                    //we have to clone window otherwise it will be
+                    let window = Window(dataPoints: dataPoints.map {$0}, classLabel: point.classLabel)
                     self.windows.append(window)
-                    window = Window(dataPoints: [])
+                    print("Window dps: \(window.dataPoints)")
+                    dataPoints = []
+                    print("Window dps after: \(window.dataPoints)")
                 }
             }
-            self.windows.append(window)
-//            print("windows count: \(self.windows.count). total points: \(dictionary.keys.count)")
+            
+            
+            self.windows.append(Window(dataPoints: allDataPoints, classLabel: allDataPoints.last!.classLabel))
             self.tableView.reloadData()
+//            print("COUNT: \(counter) LOG: WINDOWS: \(self.windows)")
         });
     }
     
@@ -74,6 +91,12 @@ class DataTableViewController: UITableViewController {
         let window: Window = windows[indexPath.row]
         
 //        window.dataPoints[0]
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/d/yy HH:mm:ss"
+        let firstPointString = formatter.string(from: window.dataPoints[0].timestamp)
+        let lastPointString = formatter.string(from: window.dataPoints[1].timestamp)
+
+        cell.textLabel?.text = "\(firstPointString) - \(lastPointString)"
         
         return cell
     }

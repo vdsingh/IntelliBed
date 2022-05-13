@@ -15,14 +15,19 @@ class Window{
 //    Var
 //    Slope
 //    Rms (root mean squared)
+    
+    static var classConverterDict: [String: String] = ["0": "Stationary", "1": "Rollover", "2": "Situp", "3": "Slight Adjust"]
 
     var dataPoints: [DataPoint]
     
     var xValues: [Double] = []
     var yValues: [Double] = []
     
-    init(dataPoints: [DataPoint]){
+    var classLabel: String = ""
+    
+    init(dataPoints: [DataPoint], classLabel: String){
         self.dataPoints = dataPoints
+        self.classLabel = classLabel
     }
     
     func numDataPoints() -> Int{
@@ -35,28 +40,42 @@ class Window{
     
     func addValuesOrReturn(){
         if xValues.count > 0 && yValues.count > 0{
+            print("LOG: values count is greater than 0")
             return
         }
         var xValues: [Double] = []
         var yValues: [Double] = []
 
         for dataPoint in dataPoints {
+            print("LOG: appending data point values. \(dataPoint.xValue), \(dataPoint.yValue)")
             xValues.append(dataPoint.xValue)
             yValues.append(dataPoint.yValue)
         }
         
         xValues.sort()
         yValues.sort()
+        
+        self.xValues = xValues
+        self.yValues = yValues
     }
     
     func sum() -> [Double]{
-        return [xValues.reduce(0, +), yValues.reduce(0, +)]
+        addValuesOrReturn()
+        print("SUMMING")
+        var sums: [Double] = [0,0]
+        for dataPoint in dataPoints {
+            sums[0] += (dataPoint.xValue)
+            sums[1] += (dataPoint.yValue)
+        }
+        return sums
     }
     
     func mean() -> [Double]{
         addValuesOrReturn()
         let sum = sum()
-        return [sum[0] / Double(xValues.count), sum[1] / Double(yValues.count)]
+        print("xVALSU: \(xValues)")
+        
+        return [round(sum[0] / Double(xValues.count) * 1000) / 1000.0, round(sum[1] / Double(yValues.count) * 1000) / 1000.0]
     }
     
     func mean(array: [Double]) -> Double{
@@ -66,7 +85,9 @@ class Window{
     
     func median() -> [Double]{
         addValuesOrReturn()
-        return [xValues[xValues.count/2], yValues[yValues.count/2]]
+        
+        print("Xvalues:\(xValues)")
+        return [round(xValues[xValues.count/2] * 1000) / 1000.0, round(yValues[yValues.count/2] * 1000) / 1000.0]
     }
     
     func standardDeviation() -> [Double]{
@@ -79,7 +100,7 @@ class Window{
 
 //        return sqrt(v / (Element(self.count) - 1))
         
-        return [sqrt(x / Double((xValues.count - 1))), sqrt(y / Double((yValues.count - 1)))]
+        return [round(sqrt(x / Double((xValues.count - 1))) * 1000) / 1000.0, round(sqrt(y / Double((yValues.count - 1))) * 1000) / 1000.0]
     }
     
     func squaredDeviations() -> [[Double]] {
@@ -88,14 +109,14 @@ class Window{
     }
     
     func variance() -> [Double]{
-        return [mean(array: squaredDeviations()[0]), mean(array: squaredDeviations()[1])]
+        return [round(mean(array: squaredDeviations()[0]) * 1000000) / 1000000.0 , round(mean(array: squaredDeviations()[1]) * 1000000) / 1000000.0 ]
     }
     
     func slope() -> [Double]{
-        return [0]
+        return [0, 0]
     }
     
     func rootMeanSquared() -> [Double]{
-        return [0]
+        return [0, 0]
     }
 }

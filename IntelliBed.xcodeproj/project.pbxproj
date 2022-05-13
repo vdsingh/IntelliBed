@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		162100E92812239500A06A1D /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162100E82812239500A06A1D /* DemoBaseViewController.swift */; };
 		16B9918D282D52D400BC72E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16B9918C282D52D400BC72E3 /* GoogleService-Info.plist */; };
 		16B9918E282D52D400BC72E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16B9918C282D52D400BC72E3 /* GoogleService-Info.plist */; };
 		16B9918F282D52D400BC72E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16B9918C282D52D400BC72E3 /* GoogleService-Info.plist */; };
@@ -15,6 +14,7 @@
 		16B99193282D6DFC00BC72E3 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B99192282D6DFC00BC72E3 /* DataPoint.swift */; };
 		16B99195282D761B00BC72E3 /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B99194282D761B00BC72E3 /* WindowViewController.swift */; };
 		16B99197282D7DC900BC72E3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B99196282D7DC900BC72E3 /* Extensions.swift */; };
+		16B99199282E198B00BC72E3 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B99198282E198B00BC72E3 /* LineChart.swift */; };
 		16CAC74B27EA565E00250FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC74A27EA565E00250FE6 /* AppDelegate.swift */; };
 		16CAC74D27EA565E00250FE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC74C27EA565E00250FE6 /* SceneDelegate.swift */; };
 		16CAC74F27EA565E00250FE6 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC74E27EA565E00250FE6 /* DataTableViewController.swift */; };
@@ -47,12 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		162100E82812239500A06A1D /* DemoBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
 		16B9918C282D52D400BC72E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16B99190282D6DD600BC72E3 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		16B99192282D6DFC00BC72E3 /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 		16B99194282D761B00BC72E3 /* WindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowViewController.swift; sourceTree = "<group>"; };
 		16B99196282D7DC900BC72E3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		16B99198282E198B00BC72E3 /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		16CAC74727EA565E00250FE6 /* IntelliBed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliBed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CAC74A27EA565E00250FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16CAC74C27EA565E00250FE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,9 +138,9 @@
 				16CAC75327EA566400250FE6 /* Assets.xcassets */,
 				16CAC75527EA566400250FE6 /* LaunchScreen.storyboard */,
 				16CAC75827EA566400250FE6 /* Info.plist */,
-				162100E82812239500A06A1D /* DemoBaseViewController.swift */,
 				16B99190282D6DD600BC72E3 /* Window.swift */,
 				16B99192282D6DFC00BC72E3 /* DataPoint.swift */,
+				16B99198282E198B00BC72E3 /* LineChart.swift */,
 				16B99194282D761B00BC72E3 /* WindowViewController.swift */,
 				16B99196282D7DC900BC72E3 /* Extensions.swift */,
 			);
@@ -433,9 +433,9 @@
 				16B99193282D6DFC00BC72E3 /* DataPoint.swift in Sources */,
 				16CAC74F27EA565E00250FE6 /* DataTableViewController.swift in Sources */,
 				16B99197282D7DC900BC72E3 /* Extensions.swift in Sources */,
+				16B99199282E198B00BC72E3 /* LineChart.swift in Sources */,
 				16B99191282D6DD600BC72E3 /* Window.swift in Sources */,
 				16CAC74B27EA565E00250FE6 /* AppDelegate.swift in Sources */,
-				162100E92812239500A06A1D /* DemoBaseViewController.swift in Sources */,
 				16CAC74D27EA565E00250FE6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
